@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/collectData/static/css/main.aea9686e.css",
+    "main.js": "/collectData/static/js/main.24d15158.js",
+    "index.html": "/collectData/index.html",
+    "main.aea9686e.css.map": "/collectData/static/css/main.aea9686e.css.map",
+    "main.24d15158.js.map": "/collectData/static/js/main.24d15158.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea9686e.css",
+    "static/js/main.24d15158.js"
+  ]
+}
