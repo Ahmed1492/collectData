@@ -1,0 +1,27 @@
+.rightnavbar {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 10px;
+  padding: 18px 26px;
+  min-width: 18vw;
+  margin-right: 2rem;
+  /* margin-top: 19px; */
+}
+
+.rightnavbar a {
+  padding: 10px;
+  font-size: 26px;
+  color: #07427c;
+  text-align: right !important;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.rightnavbar div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

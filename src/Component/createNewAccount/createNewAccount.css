@@ -1,0 +1,145 @@
+.createNewUswerPage {
+  display: flex;
+  gap: 20px;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 17px;
+  border-radius: 10px;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4450a8;
+  font-weight: 100;
+}
+.header h1 {
+  font-weight: 600;
+  font-size: 29px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+form .flex {
+  margin-top: 23px;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 42rem;
+  width: 50vw;
+}
+.myform {
+  margin-right: 11px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  margin-right: 8px;
+  font-size: 20px;
+  color: #8f7e7ecf;
+  font-weight: 300;
+}
+label::after {
+  content: " *";
+  color: red;
+  font-weight: 800;
+}
+
+input {
+  padding: 5px 9px;
+  width: 100%;
+  border: 1px solid rgb(229 220 220);
+  border-radius: 5px;
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.w-half {
+  width: calc(100% / 2);
+}
+
+.w-third {
+  width: calc(100% / 3);
+}
+
+.birthday {
+  margin-top: 16px;
+}
+.submitForm {
+  text-align: center;
+  margin-top: 1rem;
+}
+.submitForm button {
+  background-color: #d2d8ff;
+  padding: 2px 6rem;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 200;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 21px !important;
+  font-weight: 400;
+}
+
+/* ---------------------------- Media Query ---------------------- */
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .dateOfBirth input {
+    width: 100%;
+  }
+
+  .submitForm button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .error {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  .submitForm button {
+    font-size: 16px;
+  }
+}

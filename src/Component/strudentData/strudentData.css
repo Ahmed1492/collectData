@@ -1,0 +1,175 @@
+.darkBackground {
+  background-color: #d9d9d9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.student-details {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section.flex {
+  align-items: center;
+}
+.section.w-half {
+  justify-content: flex-start !important;
+}
+
+.w-full {
+  width: 100% !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-half {
+  width: 50% !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  color: #07427c;
+  font-size: 25px !important;
+}
+
+.student-info,
+.group-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section {
+  flex: 1 0 30%;
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 29px;
+  font-size: 1.7em;
+  /* line-height: 1.5; */
+  min-width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.group-info,
+.currentLevel {
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 53px;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.group-info div:first-child {
+  justify-content: space-between;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #111c43;
+}
+
+.attendanceRecords {
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.attendance {
+  width: 100%;
+  padding: 7px 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+.checkboxAttend {
+  width: 30px;
+  height: 30px;
+  background-color: #bfb6b6;
+  border-radius: 6px;
+}
+
+.image {
+  width: 85px;
+  height: 85px;
+  background-color: #bfb6b6;
+  border-radius: 50%;
+}
+
+.currentLevel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4em;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .student-info,
+  .group-info {
+    flex-direction: column;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .currentLevel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .currentLevel p {
+    margin-bottom: 10px;
+  }
+
+  .attendance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkboxAttend {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-details {
+    width: 90%;
+  }
+
+  .section {
+    font-size: 1.2em;
+  }
+
+  .attendance {
+    font-size: 1.2em;
+  }
+
+  .currentLevel {
+    font-size: 1.2em;
+  }
+}
+
+.attend {
+  background-color: #4caf50 !important;
+}
