@@ -3,8 +3,20 @@ import "./createNewAccount.css";
 import { RightNavbar } from "../rightNavbar/RightNavbar";
 import icone03 from "../../images/icone03.png";
 
-export const CreateNewAccount = ({ formData, setFormData }) => {
+export const CreateNewAccount = () => {
   const [errors, setErrors] = useState({});
+
+  const [formData, setFormData] = useState({
+    name: "",
+    joinSchoolDate: "",
+    hisOffice: "",
+    address: "",
+    dayOfBirth: "",
+    monthOfBirth: "",
+    yearOfBirth: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   // Validation Functions
   const validatePassword = (password) => {
