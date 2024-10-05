@@ -32,10 +32,9 @@ form .flex {
 form {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px;
   border-radius: 10px;
-  min-height: 42rem;
   width: 50vw;
+  padding: 11px 16px 39px 16px;
 }
 .myform {
   margin-right: 11px;
@@ -95,51 +94,229 @@ input {
   font-weight: 400;
 }
 
+.header img {
+  width: 39px;
+}
+h1 {
+  font-size: 27px;
+}
+
 /* ---------------------------- Media Query ---------------------- */
-
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-    gap: 15px;
+@media screen and (min-width: 1516px) and (max-width: 1642px) {
+  form {
+    width: 53vw;
   }
 
-  input {
-    width: 100%;
+  .header img {
+    width: 39px !important;
   }
-
-  .dateOfBirth input {
-    width: 100%;
-  }
-
-  .submitForm button {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-  }
-
-  .header {
-    margin-bottom: 20px;
-  }
-
-  label {
-    font-size: 18px;
+  h1 {
+    font-size: 27px !important;
   }
 
   .error {
-    font-size: 18px;
+    font-size: 20px !important;
+  }
+}
+@media screen and (min-width: 1302px) and (max-width: 1516px) {
+  form {
+    width: 57vw;
+  }
+  p {
+    font-size: 10px !important;
+  }
+
+  .header img {
+    width: 38px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+
+  .error {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1303px) {
+  form {
+    width: 60vw;
+  }
+  p {
+    font-size: 10px !important;
+  }
+  input {
+    font-size: 15px !important;
+  }
+
+  .header img {
+    width: 37px !important;
+  }
+  h1 {
+    font-size: 25px !important;
+  }
+  .error {
+    font-size: 18px !important;
   }
 }
 
-@media (max-width: 480px) {
-  .header {
-    font-size: 24px;
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  form {
+    width: 65vw;
   }
-
+  .myform {
+    margin-right: 0 !important;
+  }
+  p {
+    font-size: 10px !important;
+  }
   input {
-    font-size: 18px;
+    font-size: 15px !important;
+  }
+  .header img {
+    width: 38px !important;
+  }
+  h1 {
+    font-size: 25px !important;
+  }
+  .error {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 805px) and (max-width: 900px) {
+  form {
+    width: 63vw;
   }
 
-  .submitForm button {
-    font-size: 16px;
+  .myform {
+    margin-right: 0 !important;
+  }
+  p {
+    font-size: 10px !important;
+  }
+  input {
+    font-size: 15px !important;
+  }
+
+  form .flex {
+    gap: 10px !important;
+  }
+  .header img {
+    width: 37px !important;
+  }
+  h1 {
+    font-size: 23px !important;
+  }
+  .error {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 805px) {
+  form {
+    width: 90vw;
+  }
+  .myform {
+    margin-right: 0 !important;
+  }
+  .createNewUswerPage {
+    justify-content: center !important;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 10px !important;
+  }
+  input {
+    font-size: 15px !important;
+  }
+
+  form .flex {
+    gap: 10px !important;
+  }
+  .header img {
+    width: 34px !important;
+  }
+  h1 {
+    font-size: 20px !important;
+  }
+  .error {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  form {
+    width: 97vw;
+  }
+  label {
+    font-size: 14px !important;
+  }
+  .myform {
+    margin-right: 0 !important;
+  }
+  .createNewUswerPage {
+    justify-content: center !important;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 10px !important;
+  }
+  input {
+    font-size: 15px !important;
+    padding: 4px !important;
+  }
+  h1 {
+    font-size: 20px !important;
+  }
+  form .flex {
+    gap: 10px !important;
+  }
+  button {
+    padding: 2px 4rem !important;
+    font-size: 20px !important;
+  }
+  .header img {
+    width: 34px !important;
+  }
+  .error {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    width: 99vw;
+  }
+  label {
+    font-size: 14px !important;
+  }
+  .myform {
+    margin-right: 0 !important;
+  }
+  .createNewUswerPage {
+    justify-content: center !important;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 10px !important;
+  }
+  input {
+    font-size: 15px !important;
+    padding: 4px !important;
+  }
+  h1 {
+    color: red !important;
+    font-size: 20px !important;
+  }
+  form .flex {
+    gap: 10px !important;
+  }
+  button {
+    padding: 2px 4rem !important;
+    font-size: 20px !important;
+  }
+  .header img {
+    width: 34px !important;
+  }
+  .error {
+    font-size: 16px !important;
   }
 }

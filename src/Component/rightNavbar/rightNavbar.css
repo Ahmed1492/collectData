@@ -7,6 +7,7 @@
   min-width: 18vw;
   margin-right: 2rem;
   /* margin-top: 19px; */
+  transition: all 0.8s;
 }
 
 .rightnavbar a {
@@ -24,4 +25,95 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.rightnavbar button {
+  top: 5px;
+  right: 2px;
+  position: fixed;
+  z-index: 99999;
+  transition: all 0.8s;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0 !important;
+}
+.rightnavbar .menue {
+  width: 50px;
+  display: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.showNavbar {
+  /* right: 0 !important; */
+  transition: all 0.8s;
+  right: 0;
+  direction: rtl;
+}
+.hideNavbar {
+  right: -100vw !important;
+  direction: ltr;
+}
+
+/* -----------------------  media Query -----------------------*/
+
+@media screen and (min-width: 1596px) and (max-width: 1860px) {
+  .rightnavbar {
+    min-width: 20vw;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1596px) {
+  .rightnavbar {
+    min-width: 21vw;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .rightnavbar {
+    min-width: 23vw;
+  }
+}
+@media screen and (min-width: 1195px) and (max-width: 1300px) {
+  .rightnavbar {
+    min-width: 23vw;
+  }
+  a {
+    font-size: 19px !important;
+  }
+}
+@media screen and (min-width: 939px) and (max-width: 1195px) {
+  .rightnavbar {
+    min-width: 29vw;
+  }
+  a {
+    font-size: 19px !important;
+  }
+}
+@media screen and (min-width: 805px) and (max-width: 939px) {
+  .rightnavbar {
+    min-width: 29vw;
+  }
+  .rightnavbar a {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .rightnavbar {
+    /* display: none !important; */
+    position: absolute;
+    top: 30px;
+    /* left: 100vw; */
+    bottom: 0;
+    font-size: 22px !important;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    transition: all 0.8s;
+  }
+  .rightnavbar a {
+    font-size: 20px !important;
+  }
+  .rightnavbar .menue {
+    display: block;
+  }
 }

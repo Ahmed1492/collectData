@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./createNewAccount.css";
 import { RightNavbar } from "../rightNavbar/RightNavbar";
-import icone03 from "../../images/icone03.jpg";
+import icone03 from "../../images/icone03.png";
 
 export const CreateNewAccount = ({ formData, setFormData }) => {
   const [errors, setErrors] = useState({});

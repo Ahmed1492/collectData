@@ -43,6 +43,8 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 33px;
+  align-items: center;
 }
 
 .section {
@@ -53,7 +55,6 @@ p {
   font-size: 1.7em;
   /* line-height: 1.5; */
   min-width: 250px;
-  margin: 10px;
   border-radius: 10px;
 }
 
@@ -85,6 +86,9 @@ h3 {
   padding: 20px;
   margin-top: 2rem;
   border-radius: 10px;
+}
+.attend {
+  background-color: green !important;
 }
 
 .attendance {
@@ -119,57 +123,197 @@ h3 {
 .wrap {
   flex-wrap: wrap;
 }
+.flex.w-full p {
+  font-size: 23px !important;
+}
 
-@media (max-width: 768px) {
-  .student-info,
-  .group-info {
-    flex-direction: column;
-    font-size: 1rem;
+/*--------------------  Media Query --------------------- */
+
+@media screen and (min-width: 1716px) and (max-width: 1860px) {
+  .student-details {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1508px) and (max-width: 1716px) {
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spaceX {
+    width: 89% !important;
+  }
+}
+@media screen and (min-width: 1416px) and (max-width: 1508px) {
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .spaceX {
+    width: 96% !important;
+  }
+}
+@media screen and (min-width: 1329px) and (max-width: 1416px) {
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spaceX {
+    width: 96% !important;
+  }
+  .student-details .section {
+    /*flex: 0 1 70%; /* Resets the flex property */
+    flex: 1 1 40%;
+  }
+}
+@media screen and (min-width: 1205px) and (max-width: 1329px) {
+  p {
+    font-size: 19px !important;
+  }
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spaceX {
+    width: 96% !important;
+  }
+  .student-info {
+    justify-content: center !important;
+  }
+
+  .student-details .section {
+    /*flex: 0 1 70%; /* Resets the flex property */
+    flex: 1 1 47%;
+  }
+
+  .group-info div:first-child {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .flex.wrap.w-half {
+    width: 100% !important;
+  }
+  .currentLevel {
+    flex-wrap: wrap !important;
+  }
+}
+@media screen and (min-width: 1019px) and (max-width: 1205px) {
+  p {
+    font-size: 19px !important;
+  }
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spaceX {
+    width: 96% !important;
+  }
+  .student-info {
+    justify-content: center !important;
+  }
+
+  .student-details .section {
+    /*flex: 0 1 70%; /* Resets the flex property */
+    flex: 1 1 70%;
+  }
+
+  .group-info div:first-child {
+    flex-wrap: wrap !important;
+  }
+  .flex.wrap.w-half {
+    width: 100% !important;
+  }
+  .currentLevel {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media screen and (min-width: 607px) and (max-width: 1019px) {
+  .darkBackground {
+    padding: 0px 17px;
+  }
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spaceX {
+    width: 96% !important;
+  }
+  .student-info {
+    justify-content: center !important;
+  }
+  .student-details .section {
+    flex: auto; /* Resets the flex property */
+  }
+  .spaceX {
+    width: 98% !important;
+  }
+  .group-info div:first-child {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .flex.wrap.w-half {
+    width: 100% !important;
+  }
+  .currentLevel {
+    flex-wrap: wrap !important;
+  }
+
+  p {
+    font-size: 19px !important;
+  }
+  .student-details a {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .darkBackground {
+    padding: 0px 17px;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .student-details {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 10px !important;
+  }
+  .spaceX {
+    width: 96% !important;
+  }
+  .student-info {
+    justify-content: center !important;
+    font-size: 10px !important;
+  }
+  .student-details .section {
+    flex: auto; /* Resets the flex property */
+    font-size: 10px !important;
+  }
+  .spaceX {
+    width: 98% !important;
+  }
+  .group-info div:first-child {
+    font-size: 10px !important;
+    gap: 8px !important ;
+  }
+  .flex {
+    gap: 10px !important;
+  }
+  .group-info p {
+    font-size: 13px;
+  }
+  .group-info div:first-child {
     flex-wrap: wrap;
   }
-
-  .section {
-    flex: 1 1 100%;
-    margin: 0;
+  wrap.w-half {
+    width: 100% !important;
   }
-
   .currentLevel {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap !important;
   }
-
-  .currentLevel p {
-    margin-bottom: 10px;
+  .flex.w-full p {
+    font-size: 16px !important;
   }
-
-  .attendance {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .checkboxAttend {
-    margin: 5px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .student-details {
-    width: 90%;
-  }
-
-  .section {
-    font-size: 1.2em;
-  }
-
-  .attendance {
-    font-size: 1.2em;
-  }
-
-  .currentLevel {
-    font-size: 1.2em;
-  }
-}
-
-.attend {
-  background-color: #4caf50 !important;
 }

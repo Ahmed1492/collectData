@@ -97,7 +97,7 @@ const AttendanceRecords = ({ userData }) => {
       {/*  Attendance Header */}
       <div className="attendance">
         <p>غياب المستوي الحال</p>
-        <a href="er" className="prevLevels">
+        <a href="#test" className="prevLevels">
           عرض المستويات السابقه
         </a>
       </div>
@@ -118,8 +118,6 @@ const AttendanceRecords = ({ userData }) => {
 const Checkbox = ({ label, userData }) => (
   <div className="flex">
     <p>{label}</p>
-    <div
-      className={`checkboxAttend  ${userData ? "attend" : ""}`}
-    ></div>
+    <div className={`checkboxAttend  ${userData ? "attend" : ""}`}></div>
   </div>
 );
